@@ -1,0 +1,19 @@
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon Rehberi.csprojAssemblyReference.cache
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Kişi_Listesi.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Yeni_Kişi.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon Rehberi.csproj.GenerateResource.cache
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\bin\Debug\Telefon Rehberi.exe.config
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\bin\Debug\Telefon Rehberi.exe
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\bin\Debug\Telefon Rehberi.pdb
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Properties.Resources.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon Rehberi.csproj.CoreCompileInputs.cache
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon Rehberi.exe
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon Rehberi.pdb
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.About.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Edit_Person.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Print.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Qr_Code.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Settings.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\bin\Debug\en\Telefon Rehberi.resources.dll
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Yeni_Kişi.en.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\en\Telefon Rehberi.resources.dll
