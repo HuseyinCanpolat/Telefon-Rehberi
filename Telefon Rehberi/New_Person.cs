@@ -86,7 +86,10 @@ namespace Telefon_Rehberi
                 connect.Open();
                 OleDbCommand cmd = new OleDbCommand();
                 cmd.Connection = connect;
-                cmd.CommandText = "insert into persons (id,name,surname,birthday,birthplace,job,phone1,phone2,housephone,jobphone,homeadress,jobadress,email,website) values('" + txtName.Text + "','" + txtSurname.Text + "','" + txtBirthDay.Text + "','" + txtBirthPlace.Text + "','" + txtJob.Text + "','" + txtMobile1.Text + "','" + txtMobile2.Text + "','" + txtHousePhone.Text + "','" + txtJobPhone.Text + "','" + txtJobAddress.Text + "','" + txtAdress.Text + "','" + txtMail.Text + "','" + txtWebSite.Text + "' )";
+                cmd.CommandText = $"insert into persons(name,surname,birthday,birthplace,job,phone1,phone2,housephone,jobphone,homeadress,jobadress,email,website)" +
+                    $"values('{this.txtName.Text}','{this.txtSurname.Text}','{this.txtBirthDay.Text}','{this.txtBirthPlace.Text}','{this.txtJob.Text}','{this.txtMobile1.Text}','{this.txtMobile2.Text}','{this.txtHousePhone.Text}','{txtJobPhone}','{this.txtAdress.Text}','{this.txtJobAddress.Text}','{this.txtMail.Text}','{this.txtWebSite.Text}')"; 
+                    
+
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Kişi Kaydedildi");
                 connect.Close();

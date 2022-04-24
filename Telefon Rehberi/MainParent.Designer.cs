@@ -145,6 +145,7 @@
             this.Menu_About_Me.Name = "Menu_About_Me";
             this.Menu_About_Me.Size = new System.Drawing.Size(70, 22);
             this.Menu_About_Me.Text = "Hakkında";
+            this.Menu_About_Me.Click += new System.EventHandler(this.Menu_About_Me_Click_1);
             // 
             // toolStrip1
             // 
@@ -179,7 +180,6 @@
             this.Name = "MainParent";
             this.Text = "MainParent";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            //this.Load += new System.EventHandler(this.MainParent_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

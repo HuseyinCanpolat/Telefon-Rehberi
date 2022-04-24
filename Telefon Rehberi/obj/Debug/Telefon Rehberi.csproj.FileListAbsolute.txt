@@ -19,3 +19,5 @@ C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Tel
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.New_Person.en.resources
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Print.resources
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Login.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\bin\Debug\QRCoder.dll
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon Rehberi.csproj.CopyComplete

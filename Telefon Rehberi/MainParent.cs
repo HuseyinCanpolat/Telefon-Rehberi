@@ -61,13 +61,13 @@ namespace Telefon_Rehberi
             settings.Show();
         }
 
-        private void Menu_About_Me_Click(object sender, EventArgs e)
+       
+
+        private void Menu_About_Me_Click_1(object sender, EventArgs e)
         {
             About about = new About();
             about.MdiParent = this;
             about.Show();
         }
-
-        
     }
 }
