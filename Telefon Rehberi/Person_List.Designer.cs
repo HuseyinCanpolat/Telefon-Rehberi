@@ -1,6 +1,6 @@
 ﻿namespace Telefon_Rehberi
 {
-    partial class Kişi_Listesi
+    partial class Person_List
     {
         /// <summary>
         /// Required designer variable.

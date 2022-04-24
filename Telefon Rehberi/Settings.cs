@@ -20,7 +20,7 @@ namespace Telefon_Rehberi
         private void Menu_New_Person_Click(object sender, EventArgs e)
         {
             this.Opacity = 0;
-            Yeni_Kişi ykisi = new Yeni_Kişi();
+            New_Person ykisi = new New_Person();
             ykisi.Visible = true;
              
             this.Location = new Point(ykisi.Location.X - 8, ykisi.Location.Y - 80);
@@ -30,7 +30,7 @@ namespace Telefon_Rehberi
         {
              
             this.Opacity = 100;
-            Kişi_Listesi kisi = new Kişi_Listesi();
+            Person_List kisi = new Person_List();
             kisi.Show();
              
             this.Location = new Point(kisi.Location.X - 8, kisi.Location.Y - 80);
@@ -71,10 +71,10 @@ namespace Telefon_Rehberi
         {
              
             this.Opacity = 100;
-            About abo = new About();
-            abo.Show();
              
-            this.Location = new Point(abo.Location.X - 8, abo.Location.Y - 80);
+            
+             
+             
         }
     }
 }

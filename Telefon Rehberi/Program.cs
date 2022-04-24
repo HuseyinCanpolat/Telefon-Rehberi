@@ -16,7 +16,7 @@ namespace Telefon_Rehberi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Yeni_Kişi());
+            Application.Run(new MainParent());
         }
     }
 }

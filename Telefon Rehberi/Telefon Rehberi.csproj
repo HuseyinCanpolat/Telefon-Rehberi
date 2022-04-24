@@ -58,11 +58,17 @@
     <Compile Include="Edit_Person.Designer.cs">
       <DependentUpon>Edit_Person.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kişi_Listesi.cs">
+    <Compile Include="Person_List.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kişi_Listesi.Designer.cs">
-      <DependentUpon>Kişi_Listesi.cs</DependentUpon>
+    <Compile Include="Person_List.Designer.cs">
+      <DependentUpon>Person_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainParent.Designer.cs">
+      <DependentUpon>MainParent.cs</DependentUpon>
     </Compile>
     <Compile Include="Qr_Code.cs">
       <SubType>Form</SubType>
@@ -76,11 +82,11 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Yeni_Kişi.cs">
+    <Compile Include="New_Person.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Yeni_Kişi.Designer.cs">
-      <DependentUpon>Yeni_Kişi.cs</DependentUpon>
+    <Compile Include="New_Person.Designer.cs">
+      <DependentUpon>New_Person.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,8 +96,11 @@
     <EmbeddedResource Include="Edit_Person.resx">
       <DependentUpon>Edit_Person.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kişi_Listesi.resx">
-      <DependentUpon>Kişi_Listesi.cs</DependentUpon>
+    <EmbeddedResource Include="Person_List.resx">
+      <DependentUpon>Person_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainParent.resx">
+      <DependentUpon>MainParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Qr_Code.resx">
       <DependentUpon>Qr_Code.cs</DependentUpon>
@@ -99,11 +108,11 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Yeni_Kişi.en.resx">
-      <DependentUpon>Yeni_Kişi.cs</DependentUpon>
+    <EmbeddedResource Include="New_Person.en.resx">
+      <DependentUpon>New_Person.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Yeni_Kişi.resx">
-      <DependentUpon>Yeni_Kişi.cs</DependentUpon>
+    <EmbeddedResource Include="New_Person.resx">
+      <DependentUpon>New_Person.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

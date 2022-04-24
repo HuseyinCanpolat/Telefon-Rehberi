@@ -11,11 +11,11 @@ using System.Data.OleDb;
 
 namespace Telefon_Rehberi
 {
-    public partial class Kişi_Listesi : Form
+    public partial class Person_List : Form
     {
         OleDbConnection connect = new OleDbConnection("Provider = Microsoft.JET.OLEDB.4.0; Data Source = TelefonRehberi.mdb");
 
-        public Kişi_Listesi()
+        public Person_List()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Telefon_Rehberi
         {
 
             this.Opacity = 100;
-            Yeni_Kişi ykisi = new Yeni_Kişi();
+            New_Person ykisi = new New_Person();
             ykisi.Visible = true;
             this.Location = new Point(ykisi.Location.X - 8, ykisi.Location.Y - 80);
         }
@@ -32,7 +32,7 @@ namespace Telefon_Rehberi
         private void Menu_Person_List_Click(object sender, EventArgs e)
         {
 
-            Kişi_Listesi kisi = new Kişi_Listesi();
+            Person_List kisi = new Person_List();
             kisi.Show();
             this.Location = new Point(kisi.Location.X - 8, kisi.Location.Y - 80);
         }
@@ -72,10 +72,9 @@ namespace Telefon_Rehberi
         {
 
             this.Opacity = 100;
-            About abo = new About();
-            abo.Show();
-
-            this.Location = new Point(abo.Location.X - 8, abo.Location.Y - 80);
+             
+            
+             
         }
 
         private void Kişi_Listesi_Load(object sender, EventArgs e)
@@ -85,7 +84,7 @@ namespace Telefon_Rehberi
                 connect.Open();
                 OleDbCommand cmd = new OleDbCommand();
                 cmd.Connection = connect;
-                string query = "select * from Kişiler";
+                string query = "select * from persons";
                 cmd.CommandText = query;
                 OleDbDataAdapter da = new OleDbDataAdapter(cmd);
                 DataTable dt = new DataTable();
