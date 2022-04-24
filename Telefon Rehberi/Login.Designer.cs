@@ -160,6 +160,7 @@
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Login";
+            this.ShowIcon = false;
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

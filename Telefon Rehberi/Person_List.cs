@@ -32,12 +32,44 @@ namespace Telefon_Rehberi
                 OleDbDataAdapter da = new OleDbDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                dataGridView1.DataSource = dt;
+                personlistdt.DataSource = dt;
                 connect.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Hata" + ex);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            connect.Open();
+            DataSet ds = new DataSet();
+            OleDbDataAdapter oleDbDataAdapter = new  OleDbDataAdapter("select * from persons where name like +'"+ txtlist.Text+"%'order by name",connect);
+            oleDbDataAdapter.Fill(ds, "test");
+            personlistdt.DataSource = ds.Tables["test"];
+            personlistdt.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connect.Open();
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.Connection = connect;
+                string query = "delete from persons where id='" + txtlist.Text + "'";
+                cmd.CommandText = query;
+                MessageBox.Show(query);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Veri Silindi");
+                connect.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
             }
         }
     }

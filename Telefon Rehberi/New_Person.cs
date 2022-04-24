@@ -13,7 +13,7 @@ namespace Telefon_Rehberi
 {
     public partial class New_Person : Form
     {
-        OleDbConnection connect = new OleDbConnection("Provider = Microsoft.JET.OLEDB.4.0; Data Source = TelefonRehberi.mdb");
+        OleDbConnection connect = new OleDbConnection("Provider = Microsoft.JET.OLEDB.4.0; Data Source = PhoneBook.mdb");
 
         public New_Person()
         {

@@ -28,58 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btneditdel = new System.Windows.Forms.Button();
+            this.btnadd = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txteditpers = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btneditdel
             // 
-            this.button1.Location = new System.Drawing.Point(12, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Sil";
-            this.button1.UseVisualStyleBackColor = true;
-            
+            this.btneditdel.Location = new System.Drawing.Point(250, 28);
+            this.btneditdel.Name = "btneditdel";
+            this.btneditdel.Size = new System.Drawing.Size(75, 23);
+            this.btneditdel.TabIndex = 15;
+            this.btneditdel.Text = "Sil";
+            this.btneditdel.UseVisualStyleBackColor = true;
+            this.btneditdel.Click += new System.EventHandler(this.btneditdel_Click);
             // 
-            // button2
+            // btnadd
             // 
-            this.button2.Location = new System.Drawing.Point(95, 28);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Ekle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnadd.Location = new System.Drawing.Point(331, 28);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(75, 23);
+            this.btnadd.TabIndex = 16;
+            this.btnadd.Text = "Ekle";
+            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
-            // button3
+            // btnupdate
             // 
-            this.button3.Location = new System.Drawing.Point(176, 28);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Güncelle";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnupdate.Location = new System.Drawing.Point(412, 28);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnupdate.TabIndex = 17;
+            this.btnupdate.Text = "Güncelle";
+            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 57);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1143, 391);
+            this.dataGridView1.TabIndex = 18;
+            // 
+            // txteditpers
+            // 
+            this.txteditpers.Location = new System.Drawing.Point(12, 31);
+            this.txteditpers.Name = "txteditpers";
+            this.txteditpers.Size = new System.Drawing.Size(232, 20);
+            this.txteditpers.TabIndex = 19;
             // 
             // Edit_Person
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txteditpers);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.btnadd);
+            this.Controls.Add(this.btneditdel);
             this.Name = "Edit_Person";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit_Person";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btneditdel;
+        private System.Windows.Forms.Button btnadd;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txteditpers;
     }
 }

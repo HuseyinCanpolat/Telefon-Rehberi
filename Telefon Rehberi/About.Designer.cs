@@ -260,7 +260,7 @@
             this.groupBox1.Size = new System.Drawing.Size(213, 409);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "About Me";
+            this.groupBox1.Text = "Hakkımda";
             // 
             // label2
             // 
@@ -315,8 +315,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "About";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "About";
+            this.ShowIcon = false;
+            this.Text = "Hakkında";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

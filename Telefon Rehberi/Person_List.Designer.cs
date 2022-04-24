@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.personlistdt = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtlist = new System.Windows.Forms.TextBox();
+            this.btnfind = new System.Windows.Forms.Button();
+            this.btndel = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.personlistdt)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // personlistdt
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 73);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1157, 467);
-            this.dataGridView1.TabIndex = 0;
+            this.personlistdt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.personlistdt.Location = new System.Drawing.Point(0, 73);
+            this.personlistdt.Name = "personlistdt";
+            this.personlistdt.Size = new System.Drawing.Size(1157, 467);
+            this.personlistdt.TabIndex = 0;
             // 
             // label2
             // 
@@ -54,38 +55,52 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Kişi Listesi";
             // 
-            // textBox1
+            // txtlist
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 20);
-            this.textBox1.TabIndex = 15;
+            this.txtlist.Location = new System.Drawing.Point(12, 47);
+            this.txtlist.Name = "txtlist";
+            this.txtlist.Size = new System.Drawing.Size(192, 20);
+            this.txtlist.TabIndex = 15;
             // 
-            // button1
+            // btnfind
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.75F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(221, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Ara";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnfind.Font = new System.Drawing.Font("Segoe UI", 8.75F, System.Drawing.FontStyle.Bold);
+            this.btnfind.Location = new System.Drawing.Point(210, 37);
+            this.btnfind.Name = "btnfind";
+            this.btnfind.Size = new System.Drawing.Size(75, 30);
+            this.btnfind.TabIndex = 16;
+            this.btnfind.Text = "Ara";
+            this.btnfind.UseVisualStyleBackColor = true;
+            this.btnfind.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btndel
+            // 
+            this.btndel.Font = new System.Drawing.Font("Segoe UI", 8.75F, System.Drawing.FontStyle.Bold);
+            this.btndel.Location = new System.Drawing.Point(291, 37);
+            this.btndel.Name = "btndel";
+            this.btndel.Size = new System.Drawing.Size(75, 30);
+            this.btndel.TabIndex = 16;
+            this.btndel.Text = "Sil";
+            this.btndel.UseVisualStyleBackColor = true;
+            this.btndel.Click += new System.EventHandler(this.button2_Click);
             // 
             // Person_List
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 539);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btndel);
+            this.Controls.Add(this.btnfind);
+            this.Controls.Add(this.txtlist);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.personlistdt);
             this.Name = "Person_List";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kişi Listesi";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Kişi_Listesi_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personlistdt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,9 +108,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView personlistdt;
         public System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtlist;
+        private System.Windows.Forms.Button btnfind;
+        private System.Windows.Forms.Button btndel;
     }
 }
