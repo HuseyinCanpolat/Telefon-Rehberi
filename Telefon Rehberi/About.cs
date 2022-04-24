@@ -29,7 +29,7 @@ namespace Telefon_Rehberi
             About abo = new About();
             abo.Close();
             Kişi_Listesi kisi = new Kişi_Listesi();
-            kisi.Show();
+            kisi.ShowDialog();
              
             this.Location = new Point(kisi.Location.X - 8, kisi.Location.Y - 80);
         }

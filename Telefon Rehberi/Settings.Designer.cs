@@ -138,7 +138,7 @@
             this.menu_PrintPerson.Name = "menu_PrintPerson";
             this.menu_PrintPerson.Size = new System.Drawing.Size(49, 22);
             this.menu_PrintPerson.Text = "Yazdır";
-            this.menu_PrintPerson.Click += new System.EventHandler(this.menu_PrintPerson_Click);
+          
             // 
             // toolStripSeparator3
             // 

@@ -459,7 +459,7 @@
             // 
             resources.ApplyResources(this.menu_PrintPerson, "menu_PrintPerson");
             this.menu_PrintPerson.Name = "menu_PrintPerson";
-            this.menu_PrintPerson.Click += new System.EventHandler(this.menu_PrintPerson_Click);
+          
             // 
             // toolStripSeparator3
             // 

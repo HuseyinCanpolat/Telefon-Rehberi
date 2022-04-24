@@ -56,15 +56,7 @@ namespace Telefon_Rehberi
             this.Location = new Point(qr.Location.X - 8, qr.Location.Y - 80);
         }
 
-         
-        {
-             
-            this.Opacity = 100;
-             
-             
-             
-             
-        }
+
 
         private void menu_Settings_Click(object sender, EventArgs e)
         {

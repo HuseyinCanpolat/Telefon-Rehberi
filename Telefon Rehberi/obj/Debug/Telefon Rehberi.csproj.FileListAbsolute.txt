@@ -11,7 +11,6 @@ C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Tel
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon Rehberi.pdb
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.About.resources
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Edit_Person.resources
-C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Print.resources
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Qr_Code.resources
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Settings.resources
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\bin\Debug\en\Telefon Rehberi.resources.dll
