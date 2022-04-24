@@ -1,6 +1,6 @@
 ﻿namespace Telefon_Rehberi
 {
-    partial class Qr_Code
+    partial class Print
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Qr_Code
+            // Print
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1157, 450);
-            this.Name = "Qr_Code";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Qr_Code";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Print";
+            this.Text = "Print";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 

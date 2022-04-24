@@ -86,7 +86,7 @@ namespace Telefon_Rehberi
                 connect.Open();
                 OleDbCommand cmd = new OleDbCommand();
                 cmd.Connection = connect;
-                cmd.CommandText = "insert into persons (Ad,Soyad,DogumGunu,DogumYeri,Meslek,Telefon1,Telefon2,EvTelefon,IsTelefon,EvAdres,IsAdres,Email,WebSite) values('" + txtName.Text + "','" + txtSurname.Text + "','" + txtBirthDay.Text + "','" + txtBirthPlace.Text + "','" + txtJob.Text + "','" + txtMobile1.Text + "','" + txtMobile2.Text + "','" + txtHousePhone.Text + "','" + txtJobPhone.Text + "','" + txtJobAddress.Text + "','" + txtAdress.Text + "','" + txtMail.Text + "','" + txtWebSite.Text + "' )";
+                cmd.CommandText = "insert into persons (id,name,surname,birthday,birthplace,job,phone1,phone2,housephone,jobphone,homeadress,jobadress,email,website) values('" + txtName.Text + "','" + txtSurname.Text + "','" + txtBirthDay.Text + "','" + txtBirthPlace.Text + "','" + txtJob.Text + "','" + txtMobile1.Text + "','" + txtMobile2.Text + "','" + txtHousePhone.Text + "','" + txtJobPhone.Text + "','" + txtJobAddress.Text + "','" + txtAdress.Text + "','" + txtMail.Text + "','" + txtWebSite.Text + "' )";
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Kişi Kaydedildi");
                 connect.Close();

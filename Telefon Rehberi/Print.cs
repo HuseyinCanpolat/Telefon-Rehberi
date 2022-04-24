@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace Telefon_Rehberi
 {
-    public partial class Qr_Code : Form
+    public partial class Print : Form
     {
-        public Qr_Code()
+        public Print()
         {
             InitializeComponent();
         }
-        
     }
 }
-
-

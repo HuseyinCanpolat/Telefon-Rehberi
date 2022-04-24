@@ -17,3 +17,5 @@ C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Tel
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.MainParent.resources
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.New_Person.resources
 C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.New_Person.en.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Print.resources
+C:\Users\hasan\OneDrive\Masaüstü\Telefon Rehberi\Telefon Rehberi\obj\Debug\Telefon_Rehberi.Login.resources

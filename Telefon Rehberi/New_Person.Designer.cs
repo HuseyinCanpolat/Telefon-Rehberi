@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(New_Person));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.txtWebSite = new System.Windows.Forms.TextBox();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -43,16 +44,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtJobAddress = new System.Windows.Forms.RichTextBox();
             this.txtAdress = new System.Windows.Forms.RichTextBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.txtJobPhone = new System.Windows.Forms.TextBox();
             this.txtHousePhone = new System.Windows.Forms.TextBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.txtMobile2 = new System.Windows.Forms.TextBox();
             this.txtMobile1 = new System.Windows.Forms.TextBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -62,52 +57,42 @@
             this.lblPicFileName = new System.Windows.Forms.Label();
             this.txtBirthDay = new System.Windows.Forms.TextBox();
             this.btn_Add_PictureChange = new System.Windows.Forms.Button();
-            this.picBox = new System.Windows.Forms.PictureBox();
             this.txtBirthPlace = new System.Windows.Forms.TextBox();
             this.txtJob = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.btn_NewPerson = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.picBox = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.Menu_New_Person = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.Menu_Person_List = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.Menu_Edit_Person = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.Menu_Vcard = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.menu_PrintPerson = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.menu_Settings = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.Menu_About_Me = new System.Windows.Forms.ToolStripButton();
-            this.btn_NewPerson = new System.Windows.Forms.Button();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.txtWebSite = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -123,16 +108,20 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
             // 
-            // pictureBox12
+            // txtWebSite
             // 
-            resources.ApplyResources(this.pictureBox12, "pictureBox12");
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.TabStop = false;
+            resources.ApplyResources(this.txtWebSite, "txtWebSite");
+            this.txtWebSite.Name = "txtWebSite";
             // 
             // txtMail
             // 
@@ -210,18 +199,6 @@
             resources.ApplyResources(this.txtAdress, "txtAdress");
             this.txtAdress.Name = "txtAdress";
             // 
-            // pictureBox7
-            // 
-            resources.ApplyResources(this.pictureBox7, "pictureBox7");
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.TabStop = false;
-            // 
             // txtJobPhone
             // 
             resources.ApplyResources(this.txtJobPhone, "txtJobPhone");
@@ -232,18 +209,6 @@
             resources.ApplyResources(this.txtHousePhone, "txtHousePhone");
             this.txtHousePhone.Name = "txtHousePhone";
             // 
-            // pictureBox9
-            // 
-            resources.ApplyResources(this.pictureBox9, "pictureBox9");
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            resources.ApplyResources(this.pictureBox8, "pictureBox8");
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.TabStop = false;
-            // 
             // txtMobile2
             // 
             resources.ApplyResources(this.txtMobile2, "txtMobile2");
@@ -253,18 +218,6 @@
             // 
             resources.ApplyResources(this.txtMobile1, "txtMobile1");
             this.txtMobile1.Name = "txtMobile1";
-            // 
-            // pictureBox11
-            // 
-            resources.ApplyResources(this.pictureBox11, "pictureBox11");
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            resources.ApplyResources(this.pictureBox10, "pictureBox10");
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.TabStop = false;
             // 
             // groupBox1
             // 
@@ -333,13 +286,6 @@
             this.btn_Add_PictureChange.UseVisualStyleBackColor = true;
             this.btn_Add_PictureChange.Click += new System.EventHandler(this.btn_Add_PictureChange_Click);
             // 
-            // picBox
-            // 
-            resources.ApplyResources(this.picBox, "picBox");
-            this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picBox.Name = "picBox";
-            this.picBox.TabStop = false;
-            // 
             // txtBirthPlace
             // 
             resources.ApplyResources(this.txtBirthPlace, "txtBirthPlace");
@@ -359,6 +305,68 @@
             // 
             resources.ApplyResources(this.txtName, "txtName");
             this.txtName.Name = "txtName";
+            // 
+            // pictureBox12
+            // 
+            resources.ApplyResources(this.pictureBox12, "pictureBox12");
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            resources.ApplyResources(this.pictureBox15, "pictureBox15");
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.TabStop = false;
+            // 
+            // btn_NewPerson
+            // 
+            resources.ApplyResources(this.btn_NewPerson, "btn_NewPerson");
+            this.btn_NewPerson.Name = "btn_NewPerson";
+            this.btn_NewPerson.UseVisualStyleBackColor = true;
+            this.btn_NewPerson.Click += new System.EventHandler(this.btn_NewPerson_Click);
+            // 
+            // pictureBox7
+            // 
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            resources.ApplyResources(this.pictureBox9, "pictureBox9");
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            resources.ApplyResources(this.pictureBox8, "pictureBox8");
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            resources.ApplyResources(this.pictureBox11, "pictureBox11");
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            resources.ApplyResources(this.pictureBox10, "pictureBox10");
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.TabStop = false;
+            // 
+            // picBox
+            // 
+            resources.ApplyResources(this.picBox, "picBox");
+            this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picBox.Name = "picBox";
+            this.picBox.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -390,155 +398,37 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // toolStrip1
-            // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Menu_New_Person,
-            this.toolStripSeparator1,
-            this.Menu_Person_List,
-            this.toolStripSeparator4,
-            this.Menu_Edit_Person,
-            this.toolStripSeparator2,
-            this.Menu_Vcard,
-            this.toolStripSeparator7,
-            this.menu_PrintPerson,
-            this.toolStripSeparator3,
-            this.menu_Settings,
-            this.toolStripSeparator6,
-            this.Menu_About_Me});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.Name = "toolStrip1";
-            // 
-            // Menu_New_Person
-            // 
-            resources.ApplyResources(this.Menu_New_Person, "Menu_New_Person");
-            this.Menu_New_Person.MergeAction = System.Windows.Forms.MergeAction.Insert;
-            this.Menu_New_Person.Name = "Menu_New_Person";
-            this.Menu_New_Person.Click += new System.EventHandler(this.Menu_New_Person_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
-            // 
-            // Menu_Person_List
-            // 
-            resources.ApplyResources(this.Menu_Person_List, "Menu_Person_List");
-            this.Menu_Person_List.Name = "Menu_Person_List";
-            this.Menu_Person_List.Click += new System.EventHandler(this.Menu_Person_List_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
-            // 
-            // Menu_Edit_Person
-            // 
-            resources.ApplyResources(this.Menu_Edit_Person, "Menu_Edit_Person");
-            this.Menu_Edit_Person.Name = "Menu_Edit_Person";
-            this.Menu_Edit_Person.Click += new System.EventHandler(this.Menu_Edit_Person_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
-            // 
-            // Menu_Vcard
-            // 
-            resources.ApplyResources(this.Menu_Vcard, "Menu_Vcard");
-            this.Menu_Vcard.Name = "Menu_Vcard";
-            this.Menu_Vcard.Click += new System.EventHandler(this.Menu_Vcard_Click);
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            resources.ApplyResources(this.toolStripSeparator7, "toolStripSeparator7");
-            // 
-            // menu_PrintPerson
-            // 
-            resources.ApplyResources(this.menu_PrintPerson, "menu_PrintPerson");
-            this.menu_PrintPerson.Name = "menu_PrintPerson";
-          
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
-            // 
-            // menu_Settings
-            // 
-            resources.ApplyResources(this.menu_Settings, "menu_Settings");
-            this.menu_Settings.Name = "menu_Settings";
-            this.menu_Settings.Click += new System.EventHandler(this.menu_Settings_Click);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
-            // 
-            // Menu_About_Me
-            // 
-            resources.ApplyResources(this.Menu_About_Me, "Menu_About_Me");
-            this.Menu_About_Me.Name = "Menu_About_Me";
-            this.Menu_About_Me.Click += new System.EventHandler(this.Menu_About_Me_Click);
-            // 
-            // btn_NewPerson
-            // 
-            resources.ApplyResources(this.btn_NewPerson, "btn_NewPerson");
-            this.btn_NewPerson.Name = "btn_NewPerson";
-            this.btn_NewPerson.UseVisualStyleBackColor = true;
-            this.btn_NewPerson.Click += new System.EventHandler(this.btn_NewPerson_Click);
-            // 
-            // pictureBox15
-            // 
-            resources.ApplyResources(this.pictureBox15, "pictureBox15");
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.TabStop = false;
-            // 
-            // txtWebSite
-            // 
-            resources.ApplyResources(this.txtWebSite, "txtWebSite");
-            this.txtWebSite.Name = "txtWebSite";
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
-            // 
-            // Yeni_Kişi
+            // New_Person
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.btn_NewPerson);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Yeni_Kişi";
+            this.Name = "New_Person";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -590,20 +480,6 @@
         public System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton Menu_New_Person;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton Menu_Person_List;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton Menu_Edit_Person;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton Menu_Vcard;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.Windows.Forms.ToolStripButton menu_PrintPerson;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton menu_Settings;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripButton Menu_About_Me;
         public System.Windows.Forms.Label label14;
         public System.Windows.Forms.TextBox txtWebSite;
         public System.Windows.Forms.PictureBox pictureBox15;

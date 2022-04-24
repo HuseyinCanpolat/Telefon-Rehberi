@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.Menu_New_Person = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.Menu_Person_List = new System.Windows.Forms.ToolStripButton();
@@ -42,31 +41,9 @@
             this.menu_Settings = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.Menu_About_Me = new System.Windows.Forms.ToolStripButton();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Menu_New_Person,
-            this.toolStripSeparator1,
-            this.Menu_Person_List,
-            this.toolStripSeparator4,
-            this.Menu_Edit_Person,
-            this.toolStripSeparator2,
-            this.Menu_Vcard,
-            this.toolStripSeparator7,
-            this.menu_PrintPerson,
-            this.toolStripSeparator3,
-            this.menu_Settings,
-            this.toolStripSeparator6,
-            this.Menu_About_Me});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
-            this.toolStrip1.TabIndex = 14;
-            this.toolStrip1.Text = "--";
             // 
             // Menu_New_Person
             // 
@@ -93,6 +70,7 @@
             this.Menu_Person_List.Size = new System.Drawing.Size(77, 22);
             this.Menu_Person_List.Text = "Kişi Listesi";
             this.Menu_Person_List.ToolTipText = "Person List";
+            this.Menu_Person_List.Click += new System.EventHandler(this.Menu_Person_List_Click);
             // 
             // toolStripSeparator4
             // 
@@ -107,6 +85,7 @@
             this.Menu_Edit_Person.Name = "Menu_Edit_Person";
             this.Menu_Edit_Person.Size = new System.Drawing.Size(107, 22);
             this.Menu_Edit_Person.Text = "Kişi Düzenleme";
+            this.Menu_Edit_Person.Click += new System.EventHandler(this.Menu_Edit_Person_Click);
             // 
             // toolStripSeparator2
             // 
@@ -121,6 +100,7 @@
             this.Menu_Vcard.Name = "Menu_Vcard";
             this.Menu_Vcard.Size = new System.Drawing.Size(58, 22);
             this.Menu_Vcard.Text = "QR Kod";
+            this.Menu_Vcard.Click += new System.EventHandler(this.Menu_Vcard_Click);
             // 
             // toolStripSeparator7
             // 
@@ -135,6 +115,7 @@
             this.menu_PrintPerson.Name = "menu_PrintPerson";
             this.menu_PrintPerson.Size = new System.Drawing.Size(49, 22);
             this.menu_PrintPerson.Text = "Yazdır";
+            this.menu_PrintPerson.Click += new System.EventHandler(this.menu_PrintPerson_Click);
             // 
             // toolStripSeparator3
             // 
@@ -149,6 +130,7 @@
             this.menu_Settings.Name = "menu_Settings";
             this.menu_Settings.Size = new System.Drawing.Size(56, 22);
             this.menu_Settings.Text = "Ayarlar";
+            this.menu_Settings.Click += new System.EventHandler(this.menu_Settings_Click);
             // 
             // toolStripSeparator6
             // 
@@ -164,6 +146,29 @@
             this.Menu_About_Me.Size = new System.Drawing.Size(70, 22);
             this.Menu_About_Me.Text = "Hakkında";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_New_Person,
+            this.toolStripSeparator1,
+            this.Menu_Person_List,
+            this.toolStripSeparator4,
+            this.Menu_Edit_Person,
+            this.toolStripSeparator2,
+            this.Menu_Vcard,
+            this.toolStripSeparator7,
+            this.menu_PrintPerson,
+            this.toolStripSeparator3,
+            this.menu_Settings,
+            this.toolStripSeparator6,
+            this.Menu_About_Me});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.TabIndex = 14;
+            this.toolStrip1.Text = "--";
+            // 
             // MainParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +179,7 @@
             this.Name = "MainParent";
             this.Text = "MainParent";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainParent_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -183,7 +189,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton Menu_New_Person;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton Menu_Person_List;
@@ -197,5 +202,6 @@
         private System.Windows.Forms.ToolStripButton menu_Settings;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripButton Menu_About_Me;
+        private System.Windows.Forms.ToolStrip toolStrip1;
     }
 }
