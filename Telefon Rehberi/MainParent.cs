@@ -69,5 +69,12 @@ namespace Telefon_Rehberi
             about.MdiParent = this;
             about.Show();
         }
+
+        private void MainParent_Load(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.MdiParent = this;
+            login.Show();
+        }
     }
 }

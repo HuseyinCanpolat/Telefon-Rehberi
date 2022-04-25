@@ -57,7 +57,7 @@ namespace Telefon_Rehberi
                 OleDbDataAdapter da = new OleDbDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                dataGridView1.DataSource = dt;
+                editdatagrid.DataSource = dt;
                 MessageBox.Show("Veri Güncellendi");
                 connect.Close();
             }

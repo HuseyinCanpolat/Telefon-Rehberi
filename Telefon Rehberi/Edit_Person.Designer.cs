@@ -31,10 +31,10 @@
             this.btneditdel = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.editdatagrid = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txteditpers = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editdatagrid)).BeginInit();
             this.SuspendLayout();
             // 
             // btneditdel
@@ -67,13 +67,13 @@
             this.btnupdate.UseVisualStyleBackColor = true;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
-            // dataGridView1
+            // editdatagrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 57);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1143, 391);
-            this.dataGridView1.TabIndex = 18;
+            this.editdatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.editdatagrid.Location = new System.Drawing.Point(12, 57);
+            this.editdatagrid.Name = "editdatagrid";
+            this.editdatagrid.Size = new System.Drawing.Size(1143, 391);
+            this.editdatagrid.TabIndex = 18;
             // 
             // comboBox1
             // 
@@ -97,7 +97,7 @@
             this.ClientSize = new System.Drawing.Size(1157, 450);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txteditpers);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.editdatagrid);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.btneditdel);
@@ -106,7 +106,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit_Person";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editdatagrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +116,7 @@
         private System.Windows.Forms.Button btneditdel;
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.Button btnupdate;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView editdatagrid;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox txteditpers;
     }

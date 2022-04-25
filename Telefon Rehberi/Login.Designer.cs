@@ -97,6 +97,7 @@
             this.btnlogin.TabIndex = 4;
             this.btnlogin.Text = "Giriş Yap";
             this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click_1);
             // 
             // label1
             // 

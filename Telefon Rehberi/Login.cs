@@ -16,7 +16,7 @@ namespace Telefon_Rehberi
         OleDbConnection connect = new OleDbConnection("Provider=Microsoft.JET.OLEDB.4.0;Data Source=PhoneBook.mdb;Persist Security Info=False;");
         public Login()
         {
-            
+
             InitializeComponent();
         }
 
@@ -24,7 +24,7 @@ namespace Telefon_Rehberi
         {
             if (e.KeyChar == (char)30)
                 loginpw.Focus();
-            
+
         }
 
         private void loginpw_KeyPress(object sender, KeyPressEventArgs e)
@@ -33,7 +33,7 @@ namespace Telefon_Rehberi
                 btnlogin.PerformClick();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnlogin_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(loginemail.Text))
             {
@@ -45,7 +45,40 @@ namespace Telefon_Rehberi
             {
                 DataTable dataTable = new DataTable();
 
-                OleDbDataAdapter oleDbDataAdapter = new OleDbDataAdapter(new OleDbCommand("Select * from users where email ='" + this.loginemail.Text + "' and password = '" + this.loginpw.Text + "'",this.connect));
+                OleDbDataAdapter oleDbDataAdapter = new OleDbDataAdapter(new OleDbCommand("Select * from users where email ='" + this.loginemail.Text + "' and password = '" + this.loginpw.Text + "'", this.connect));
+                oleDbDataAdapter.Fill(dataTable);
+                MessageBox.Show(dataTable.Rows.Count.ToString());
+                if (dataTable.Rows.Count == 1)
+                {
+                    MessageBox.Show("Başarıyla giriş yapıldı.");
+                    
+                }
+
+                else
+                {
+                    MessageBox.Show("Email ya da Şifre hatalı.");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnlogin_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(loginemail.Text))
+            {
+                MessageBox.Show("Lütfen E-mail giriniz.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                loginemail.Focus();
+                return;
+            }
+            try
+            {
+                DataTable dataTable = new DataTable();
+
+                OleDbDataAdapter oleDbDataAdapter = new OleDbDataAdapter(new OleDbCommand("Select * from users where email ='" + this.loginemail.Text + "' and password = '" + this.loginpw.Text + "'", this.connect));
                 oleDbDataAdapter.Fill(dataTable);
                 MessageBox.Show(dataTable.Rows.Count.ToString());
                 if (dataTable.Rows.Count == 1)
@@ -53,12 +86,12 @@ namespace Telefon_Rehberi
                     MessageBox.Show("Başarıyla giriş yapıldı.");
                     this.Close();
                 }
-                
+
                 else
                 {
                     MessageBox.Show("Email ya da Şifre hatalı.");
                 }
-                
+
             }
             catch (Exception ex)
             {

@@ -59,13 +59,12 @@
             this.richTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox8.Cursor = System.Windows.Forms.Cursors.Help;
             this.richTextBox8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.richTextBox8.Location = new System.Drawing.Point(7, 316);
+            this.richTextBox8.Location = new System.Drawing.Point(9, 300);
             this.richTextBox8.Name = "richTextBox8";
             this.richTextBox8.Size = new System.Drawing.Size(645, 35);
             this.richTextBox8.TabIndex = 13;
-            this.richTextBox8.Text = "Programın ilk açılışında gizlilik nedeniyle \'Kullanıcı Adı\' ve \'Şifre\' istenmekte" +
-    "dir. Ayarlar sayfasından bu kullanıcı adınızı veya şifrenizi değiştirebilirsiniz" +
-    ".";
+            this.richTextBox8.Text = "Programın ilk açılışında gizlilik nedeniyle \'Email\' ve \'Şifre\' istenmektedir. Aya" +
+    "rlar sayfasından bu kullanıcı adınızı veya şifrenizi değiştirebilirsiniz.";
             // 
             // richTextBox7
             // 
@@ -75,10 +74,9 @@
             this.richTextBox7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.richTextBox7.Location = new System.Drawing.Point(7, 257);
             this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.Size = new System.Drawing.Size(645, 39);
+            this.richTextBox7.Size = new System.Drawing.Size(645, 23);
             this.richTextBox7.TabIndex = 13;
-            this.richTextBox7.Text = "Programda kayıtlı olan tüm kişileri toplu şekilde yazdırabilirsiniz. Bu işlemi ya" +
-    "pmak için mevcut sayfadaki listeye mouse (fare) ile çift tıklamanız yeterlidir.";
+            this.richTextBox7.Text = "Programda kayıtlı olan tüm kişileri toplu şekilde yazdırabilirsiniz.";
             // 
             // richTextBox6
             // 
@@ -98,7 +96,7 @@
             this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(4, 299);
+            this.label14.Location = new System.Drawing.Point(6, 283);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(50, 14);
             this.label14.TabIndex = 9;
