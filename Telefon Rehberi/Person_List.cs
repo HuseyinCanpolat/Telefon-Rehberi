@@ -49,6 +49,7 @@ namespace Telefon_Rehberi
             oleDbDataAdapter.Fill(ds, "test");
             personlistdt.DataSource = ds.Tables["test"];
             personlistdt.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            connect.Close();
 
         }
 
@@ -65,6 +66,28 @@ namespace Telefon_Rehberi
                 MessageBox.Show(query);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Veri Silindi");
+                connect.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                connect.Open();
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.Connection = connect;
+                string query = "select * from persons";
+                cmd.CommandText = query;
+                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                personlistdt.DataSource = dt;
+                MessageBox.Show("Veri Güncellendi");
                 connect.Close();
             }
             catch (Exception ex)

@@ -47,6 +47,7 @@
             // 
             // Menu_New_Person
             // 
+            this.Menu_New_Person.BackColor = System.Drawing.SystemColors.Control;
             this.Menu_New_Person.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.Menu_New_Person.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Menu_New_Person.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -54,6 +55,7 @@
             this.Menu_New_Person.Name = "Menu_New_Person";
             this.Menu_New_Person.Size = new System.Drawing.Size(64, 22);
             this.Menu_New_Person.Text = "Yeni Kişi";
+            this.Menu_New_Person.BackColorChanged += new System.EventHandler(this.Menu_New_Person_Click);
             this.Menu_New_Person.Click += new System.EventHandler(this.Menu_New_Person_Click);
             // 
             // toolStripSeparator1

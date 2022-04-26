@@ -102,7 +102,7 @@ namespace Telefon_Rehberi
 
         private void btn_Add_PictureChange_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

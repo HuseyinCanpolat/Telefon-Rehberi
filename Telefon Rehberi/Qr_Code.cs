@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Text;
+using QRCoder;
 
 namespace Telefon_Rehberi
 {
@@ -19,14 +21,45 @@ namespace Telefon_Rehberi
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            QRCoder.QRCodeGenerator qRCode = new QRCoder.QRCodeGenerator();
-            var MyData = qRCode.CreateQrCode(txtqrname.Text,QRCoder.QRCodeGenerator.ECCLevel.H);
-            var code = new QRCoder.QRCode(MyData);
-            pictureBox1.Image = code.GetGraphic(50);
-           
+            string qr = "select * from persons";
+            OleDbCommand cmd = new OleDbCommand(qr, connect);
+            connect.Open();
+            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            connect.Close();
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                StringBuilder bardcode = new StringBuilder();
+                bardcode.AppendLine("begin:vcard");
+                //bardcode.AppendLine("name",txtqrname.Text);
+
+                bardcode.AppendLine("end:vcard");
+                string name = dt.Rows[i]["name"].ToString();
+                string surname = dt.Rows[i]["surname"].ToString();
+                string birthday = dt.Rows[i]["birthday"].ToString();
+                string birthplace = dt.Rows[i]["birthplace"].ToString();
+                string job = dt.Rows[i]["job"].ToString();
+                string phone1 = dt.Rows[i]["phone1"].ToString();
+                string phone2 = dt.Rows[i]["phone2"].ToString();
+                string housephone = dt.Rows[i]["housephone"].ToString();
+                string jobphone = dt.Rows[i]["jobphone"].ToString();
+                string homeadress = dt.Rows[i]["homeadress"].ToString();
+                string email = dt.Rows[i]["email"].ToString();
+                string website = dt.Rows[i]["website"].ToString();
+                StringBuilder bcode1 = new StringBuilder("name:" + name + Environment.NewLine + "surname:" + surname + Environment.NewLine + "birthday:" + birthday + Environment.NewLine + "birthplace:" + birthplace + Environment.NewLine + "job:" + job + Environment.NewLine + "phone1:" + phone1 + Environment.NewLine + "phone2:" + phone2 + Environment.NewLine + "housephone:" + housephone + Environment.NewLine + "jobphone:" + jobphone + Environment.NewLine + "homeadress:" + homeadress + Environment.NewLine + "email:" + email + Environment.NewLine + "website:" + website);
+                
+                  
+
+
+            }
+
+
+
         }
 
         private void Qr_Code_Load(object sender, EventArgs e)

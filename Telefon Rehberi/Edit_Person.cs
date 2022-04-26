@@ -19,6 +19,7 @@ namespace Telefon_Rehberi
         {
             InitializeComponent();
         }
+        
 
         private void btneditdel_Click(object sender, EventArgs e)
         {
@@ -27,7 +28,7 @@ namespace Telefon_Rehberi
                 connect.Open();
                 OleDbCommand cmd = new OleDbCommand();
                 cmd.Connection = connect;
-                string query = "delete from Phone where name='" + txteditpers.Text + "'";
+                string query = "delete from Phone where name='" + txteditname.Text + "'";
                 cmd.CommandText = query;
                 MessageBox.Show(query);
                 cmd.ExecuteNonQuery();
@@ -40,8 +41,17 @@ namespace Telefon_Rehberi
             }
         }
 
+
         private void btnadd_Click(object sender, EventArgs e)
         {
+            connect.Open();
+            OleDbCommand cmd = new OleDbCommand();
+            string query = @"update persons set name ='" + txteditname.Text + "' , surname ='" + txteditsur.Text + "' , birthday ='" + txteditbirthday.Text + "' , birthplace ='" + txteditbirthplace.Text + "', job ='" + txteditjob.Text + "',phone1 ='" + txteditphone1.Text + "',phone2 ='" + txteditphone2.Text + "' , housephone='" + txtedithomephone.Text + "',jobphone ='" + txteditjobphone.Text + "',homeadress ='" + txtedithomeadress.Text + "',jobadress ='" + txteditjobadress.Text + "',email ='" + txteditemail.Text + "',website ='" + txteditwebsite.Text + "' where id ='" + comboBox1.SelectedItem + "' ";
+            cmd.CommandText = query;
+            OleDbCommand com = new OleDbCommand(query,connect);
+            com.ExecuteNonQuery();
+            connect.Close();
+
 
         }
 
@@ -61,6 +71,31 @@ namespace Telefon_Rehberi
                 MessageBox.Show("Veri Güncellendi");
                 connect.Close();
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+        }
+
+        private void Edit_Person_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                connect.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connect;
+                string query = "select * from persons";
+                command.CommandText = query;
+                OleDbDataReader oleDbDataReader = command.ExecuteReader();
+
+                while (oleDbDataReader.Read())
+                {
+                    comboBox1.Items.Add(oleDbDataReader["id"].ToString());
+                }
+                connect.Close();
+                
+            }
+
             catch (Exception ex)
             {
                 MessageBox.Show("Error" + ex);

@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
-using PagedList;
 
 namespace Telefon_Rehberi
 {
@@ -44,21 +43,25 @@ namespace Telefon_Rehberi
                 MessageBox.Show("Hata" + ex);
             }
         }
-        Bitmap bitmap;
+        
         private void btnprevious_Click_1(object sender, EventArgs e)
         {
-            int height = datagridprint.Height;
-            datagridprint.Height = datagridprint.RowCount * datagridprint.RowTemplate.Height * 2;
-            bitmap = new Bitmap(datagridprint.Height, datagridprint.Width);
-            datagridprint.DrawToBitmap(bitmap, new Rectangle(0, 0, datagridprint.Width, datagridprint.Height));
-            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
-            printPreviewDialog1.ShowDialog();
-            datagridprint.Height = height;
+            printDocument1.DefaultPageSettings.Landscape = true;
+            printDocument1.Print();
+            
         }
-
+        Bitmap bitmap;
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(bitmap, 50, 50);
+            Bitmap bm = new Bitmap(this.datagridprint.Width, this.datagridprint.Height);
+            datagridprint.DrawToBitmap(bm, new Rectangle(0, 0, this.datagridprint.Width, this.datagridprint.Height));
+            e.Graphics.DrawImage(bm, 0, 0);
+        }
+
+        private void btnprint_Click(object sender, EventArgs e)
+        {
+            printDocument1.DefaultPageSettings.Landscape = true;
+            printDocument1.Print();
         }
     }
 }

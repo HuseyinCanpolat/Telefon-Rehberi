@@ -24,6 +24,8 @@ namespace Telefon_Rehberi
             New_Person new_Person = new New_Person();
             new_Person.MdiParent = this;
             new_Person.Show();
+            
+            
         }
 
         private void Menu_Person_List_Click(object sender, EventArgs e)
